@@ -1,0 +1,31 @@
+/* تگ‌های انتخاب‌شده */
+#as-exceptions-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+.as-tag {
+    background: #007cba;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 12px;
+    position: relative;
+}
+.as-tag-remove {
+    margin-left: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.as-tag-remove:hover {
+    color: #ffdddd;
+}
+#as-clear-exceptions {
+    background: #dc3232;
+    color: #fff;
+    border: none;
+}
+#as-clear-exceptions:hover {
+    background: #a00;
+    color: #fff;
+}
