@@ -1,0 +1,176 @@
+.as-booking-form-modern {
+    max-width: 600px;
+    margin: 40px auto 32px auto;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 6px 32px 0 rgba(70,100,160,.08);
+    padding: 32px 26px 28px 26px;
+    direction: rtl;
+    font-family: 'Vazirmatn', 'IRANSans', Tahoma, sans-serif;
+}
+.as-row.as-profile-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+}
+.as-booking-avatar {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #eaf2ff;
+    border: 1.5px solid #d1e4ff;
+    display: inline-block;
+    flex-shrink: 0;
+    font-size: 36px;
+    color: #3887fe;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.as-advisor-name {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e355d;
+    line-height: 1.2;
+    font-family: dana;
+}
+.as-booking-price {
+    color: #555;
+    font-size: 15px;
+    margin-right: 4px;
+    font-family: dana;
+    margin-bottom: 25px;
+}
+.as-booking-price .price {
+    font-weight: bold;
+    color: #1976d2;
+    font-size: 16px;
+    margin-right: 6px;
+}
+.as-date-row {
+    display: flex;
+    gap: 12px;
+    justify-content: start;
+    margin-bottom: 28px;
+    overflow-x: auto;
+}
+.as-date-btn {
+    background: #fff;
+    border: 2px solid #e2e2e2;
+    border-radius: 16px;
+    min-width: 92px;
+    text-align: center;
+    padding: 8px 0 4px 0;
+    color: #2e4159;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+}
+.as-date-btn.selected, .as-date-btn:active {
+    border: 2px solid #3697fa;
+    color: #1a70cb;
+    background: #f3faff;
+    font-weight: bold;
+}
+.as-date-label {
+    font-size: 14px;
+    color: #919caf;
+    margin-bottom: 2px;
+    font-family: dana;
+}
+.as-date-btn.selected .as-date-label {
+    color: #3697fa;
+}
+.as-date-value {
+    font-size: 17px;
+    font-weight: bold;
+    color: #233454;
+    font-family: dana;
+}
+.as-time-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* هر ردیف ۳ دکمه با عرض مساوی */
+    gap: 14px 12px; /* فاصله افقی و عمودی */
+    min-height: 72px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+}
+.as-time-btn {
+    width: 100%;
+    border: 2px solid #e43671;
+    background: #fff;
+    border-color: #0b5f54 !important;
+    color: #0b5f54 !important;
+    font-family: dana !important;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 14px 0 13px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.15s;
+    box-shadow: 0 1.5px 7px 0 rgba(228,54,113,.06);
+    outline: none;
+    letter-spacing: 1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#as-book-btn {
+    width: 100% !important;
+    font-family: dana !important;
+    background: #C62828 !important;
+    color: white !important;
+    border-color: #C62828 !important;
+}
+.as-time-btn.selected,
+.as-time-btn:active {
+    background: #C62828 !important;
+    color: #fff;
+    border-color: #C62828 !important;
+    font-weight: bold;
+    box-shadow: 0 3px 16px 0 rgba(228,54,113,0.09);
+}
+.as-time-btn:hover {
+    background: #0b5f54 !important;
+    border-color: #0b5f54 !important;
+    color: #fff !important;
+}
+.as-time-btn[disabled],
+.as-time-btn.disabled {
+    background: #f1f1f1;
+    color: #aaa;
+    border-color: #e2e2e2;
+    cursor: not-allowed;
+}
+@media (max-width: 600px) {
+    .as-time-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .as-time-btn {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+}
+.as-loading { color: #888; font-size: 16px; padding: 12px 0; }
+.btn:disabled, .btn[disabled] {
+    opacity: 0.58 !important;
+    cursor: not-allowed !important;
+}
+#as-book-result .alert {
+    margin-top: 12px;
+    font-size: 15px;
+}
+@media (max-width: 480px) {
+    .as-booking-form-modern {padding: 12px 5px;}
+    .as-booking-header {flex-direction: column;}
+    .as-time-btn {font-size: 13px; padding: .4rem .7rem;}
+}

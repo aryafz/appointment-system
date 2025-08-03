@@ -1,0 +1,30 @@
+/* appointment-system/admin/css/repeater.css */
+.as-repeater-container .as-repeater-row {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #f9f9f9;
+}
+.as-repeater-container .as-repeater-row hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+.as-repeater-container .as-repeater-row label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+.as-repeater-container .as-repeater-row input[type="text"],
+.as-repeater-container .as-repeater-row textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.as-repeater-container .as-repeater-row .button {
+    margin-top: 10px;
+}
